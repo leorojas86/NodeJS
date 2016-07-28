@@ -1,7 +1,5 @@
 var http = require('http');
-
-var hostname = '127.0.0.1';
-var port = 3000;
+var config = require('./config');
 
 var server = http.createServer(function(req, res) 
 {
@@ -10,7 +8,7 @@ var server = http.createServer(function(req, res)
   res.end('Hello World\n');
 });
 
-server.listen(port, hostname, function() 
+server.listen(config.PORT, config.HOST_NAME, function() 
 {
-  console.log(`Server running at http://${hostname}:${port}/`);
+  console.log(`Server running at http://${config.HOST_NAME}:${config.PORT}/`);
 });
