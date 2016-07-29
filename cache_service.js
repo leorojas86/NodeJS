@@ -2,7 +2,7 @@ function CacheService()
 {
 	this.service = function(req, res)
 	{
-		var method = req.params.method;
+		/*var method = req.params.method;
 
 		switch(method)
 	  	{
@@ -11,7 +11,7 @@ function CacheService()
 	  		default:
 	  			console.log(`Unknown cache service method ${method}`);
 	  		break;
-	  	}
+	  	}*/
 	};
 }
 
